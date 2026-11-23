@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ESA Store</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#000000">
+<link rel="manifest" href="/admin/manifest.webmanifest">
+<link rel="icon" href="/admin/icon-192.png">
+<link rel="apple-touch-icon" href="/admin/icon-192.png">
+<link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+<div id="login" class="login" hidden>
+  <img src="/admin/icon-192.png" alt="" width="72" height="72">
+  <h1>ESA Store</h1>
+  <p class="muted">Приложение владельца магазина. Введите ключ доступа (ADMIN_TOKEN).</p>
+  <form id="loginForm">
+    <input id="tokenInput" type="password" autocomplete="current-password" placeholder="Ключ доступа" required>
+    <button class="btn" type="submit">Войти</button>
+    <p class="err" id="loginErr"></p>
+  </form>
+</div>
+
+<div id="app" hidden>
+  <header class="bar">
+    <div class="title"><img src="/admin/icon-192.png" alt="" width="28" height="28"><b>ESA Store</b></div>
+    <div class="actions">
+      <button id="bellBtn" class="icon-btn" title="Уведомления" aria-label="Уведомления">🔔</button>
+      <button id="refreshBtn" class="icon-btn" title="Обновить" aria-label="Обновить">⟳</button>
+    </div>
+  </header>
+  <p id="notice" class="notice" hidden></p>
+
+  <main>
+    <section id="tab-orders" class="tab">
+      <div class="chips" id="statusChips"></div>
+      <div id="ordersList" class="list"></div>
+    </section>
+
+    <section id="tab-stats" class="tab" hidden>
+      <div class="kpis" id="kpis"></div>
+      <div class="card"><h3>Заказы по дням <span class="muted small">последние 30 дней</span></h3><div id="chartDays" class="chart"></div></div>
+      <div class="card"><h3>Статусы</h3><div id="chartStatus" class="chart donut-wrap"></div></div>
+      <div class="card"><h3>Популярные товары <span class="muted small">штук в заказах</span></h3><div id="chartServices" class="chart"></div></div>
+      <div class="card"><h3>Когда приходят заказы <span class="muted small">по часам, Бишкек</span></h3><div id="chartHours" class="chart"></div></div>
+    </section>
+
+    <section id="tab-products" class="tab" hidden>
+      <p class="muted small">Цены, наличие и фото меняются в файле <b>products.json</b> (в репозитории esa-store). После изменения сайт обновится сам за пару минут.</p>
+      <div id="productsList" class="list"></div>
+    </section>
+  </main>
+
+  <nav class="tabs">
+    <button data-tab="orders" class="on"><span>📋</span>Заказы<i id="newBadge" hidden></i></button>
+    <button data-tab="stats"><span>📊</span>Статистика</button>
+    <button data-tab="products"><span>👕</span>Товары</button>
+  </nav>
+</div>
+<script src="/admin/admin.js" defer></script>
+</body>
+</html>

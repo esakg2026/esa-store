@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ESA Store — одежда и аксессуары ESA Black Series 2026</title>
+<meta name="description" content="Официальный магазин бренда ESA: худи, футболки, куртки, брюки, рюкзаки, термобутылки и гейминг-аксессуары коллекции ESA Black Series 2026. Доставка по Кыргызстану. Стиль. Технологии. Будущее.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="/brand/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/brand/icon-192.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ESA Store — ESA Black Series 2026">
+<meta property="og:description" content="ESA — больше, чем бренд. Стиль. Технологии. Будущее.">
+<meta property="og:image" content="/img/og.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap">
+<link rel="stylesheet" href="/style.css">
+<script src="/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#view">К содержимому</a>
+<header class="top">
+  <div class="wrap top-in">
+    <a href="#/" class="logo" aria-label="ESA Store — главная"><img src="/brand/esa-logo.svg" alt="ESA" width="64" height="34"></a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#/catalog">Каталог</a>
+      <a href="#/catalog?cat=sets">Комплекты</a>
+      <a href="#/about">О бренде</a>
+      <a href="#/delivery">Доставка и оплата</a>
+      <a href="#/track">Мой заказ</a>
+    </nav>
+    <a href="#/cart" class="cart-btn" aria-label="Корзина">
+      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M5 8h14l-1.2 12H6.2L5 8Zm4 0V6a3 3 0 0 1 6 0v2"/></svg>
+      <span class="cart-count" data-cart-count hidden>0</span>
+    </a>
+  </div>
+</header>
+
+<main id="view" tabindex="-1">
+  <div class="loading">Загрузка…</div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <img src="/brand/esa-logo.svg" alt="ESA" width="90" height="48">
+    <p class="slogan">DREAM · CREATE · ACHIEVE</p>
+    <p class="muted">ESA — больше, чем бренд. Стиль. Технологии. Будущее.</p>
+    <p class="foot-links">
+      <a href="#/catalog">Каталог</a> · <a href="#/about">О бренде</a> · <a href="#/delivery">Доставка и оплата</a> · <a href="#/track">Статус заказа</a>
+    </p>
+    <p class="muted small">Ош, Кыргызстан · <a href="#" data-bot-link target="_blank" rel="noopener">Telegram-бот магазина</a> · <a href="https://esa-orders.onrender.com" target="_blank" rel="noopener">IT-услуги ESA</a></p>
+    <p class="muted small">© 2026 ESA</p>
+  </div>
+</footer>
+
+<nav class="tabbar" aria-label="Быстрая навигация">
+  <a href="#/" data-tab="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20 9.5 7l3.2 5 2.3-3L21 20H3Z"/></svg>Главная</a>
+  <a href="#/catalog" data-tab="catalog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg>Каталог</a>
+  <a href="#/cart" data-tab="cart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8Zm4 0V6a3 3 0 0 1 6 0v2"/></svg>Корзина<span class="cart-count" data-cart-count hidden>0</span></a>
+  <a href="#/track" data-tab="track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7zM7 19a2 2 0 1 0 0-.01M17 19a2 2 0 1 0 0-.01"/></svg>Мой заказ</a>
+</nav>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<dialog id="sizeDialog" class="sheet" aria-labelledby="sizeTitle">
+  <div class="sheet-head"><h2 id="sizeTitle">Размерная сетка</h2><button class="x" data-close aria-label="Закрыть">✕</button></div>
+  <p class="muted">Обхваты тела в сантиметрах. Если вы между размерами — берите больший или напишите нам, подскажем.</p>
+  <table class="size-table"><thead><tr><th>Размер</th><th>Грудь</th><th>Талия</th><th>Бёдра</th></tr></thead><tbody id="sizeRows"></tbody></table>
+  <p class="muted small">Как измерить: грудь — по самой выступающей части, талия — по самой узкой, бёдра — по самой широкой. Сантиметровая лента — горизонтально, без натяжения.</p>
+</dialog>
+
+<dialog id="quickDialog" class="sheet" aria-labelledby="quickTitle">
+  <div class="sheet-head"><h2 id="quickTitle">Купить в 1 клик</h2><button class="x" data-close aria-label="Закрыть">✕</button></div>
+  <p class="muted" id="quickWhat"></p>
+  <form id="quickForm" novalidate>
+    <label>Ваше имя<input name="name" autocomplete="name" required maxlength="80" placeholder="Например, Айбек"></label>
+    <label>Телефон / WhatsApp<input name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="40" placeholder="+996 555 123 456"></label>
+    <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <p class="err" id="quickErr" role="alert"></p>
+    <button class="btn btn-blue wide" type="submit">Отправить заказ</button>
+    <p class="muted small">Менеджер перезвонит, уточнит доставку и подтвердит заказ. Оплата — только после подтверждения.</p>
+  </form>
+</dialog>
+</body>
+</html>
