@@ -17,6 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap">
 <link rel="stylesheet" href="/style.css">
+<script src="/i18n.js" defer></script>
 <script src="/app.js" defer></script>
 </head>
 <body>
@@ -31,6 +32,7 @@
       <a href="#/delivery">Доставка и оплата</a>
       <a href="#/track">Мой заказ</a>
     </nav>
+    <div class="lang" id="langSwitch" role="group" aria-label="Язык / Тил / Language"></div>
     <a href="#/cart" class="cart-btn" aria-label="Корзина">
       <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M5 8h14l-1.2 12H6.2L5 8Zm4 0V6a3 3 0 0 1 6 0v2"/></svg>
       <span class="cart-count" data-cart-count hidden>0</span>

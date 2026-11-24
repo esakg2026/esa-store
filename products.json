@@ -1,31 +1,131 @@
 {
-  "_help": "Это единственный файл, где владелец меняет товары. price: число в сомах (например 2500) или null — тогда на сайте «Цену уточняйте». inStock: false — товар «Под заказ». soldOut: размеры, которых нет в наличии. images: файлы из public/img/p/ (сейчас временные картинки — замените на реальные фото).",
+  "_help": "Это единственный файл, где владелец меняет товары. price: число в сомах (например 2500) или null — тогда на сайте «Цену уточняйте». inStock: false — товар «Под заказ». soldOut: размеры, которых нет в наличии. images: файлы из public/img/p/ (сейчас временные картинки — замените на реальные фото). Переводы: поля \"ky\" (кыргызча) и \"en\" (English) у товаров, категорий и цветов — если перевода нет, показывается русский текст.",
   "currency": "сом",
   "categories": [
-    { "id": "hoodies", "title": "Худи и свитшоты", "en": "Hoodies & Sweatshirts" },
-    { "id": "tees", "title": "Футболки", "en": "T-shirts" },
-    { "id": "jackets", "title": "Куртки и ветровки", "en": "Jackets & Windbreakers" },
-    { "id": "pants", "title": "Брюки и штаны", "en": "Pants & Joggers" },
-    { "id": "sport", "title": "Спортивная линия", "en": "Sport collection" },
-    { "id": "headwear", "title": "Кепки, шапки, носки", "en": "Caps, beanies, socks" },
-    { "id": "bags", "title": "Рюкзаки и сумки", "en": "Backpacks & bags" },
-    { "id": "drinkware", "title": "Термобутылки и кружки", "en": "Bottles & mugs" },
-    { "id": "tech", "title": "Техника и гейминг", "en": "Tech & gaming" },
-    { "id": "sets", "title": "Комплекты и подарки", "en": "Sets & gifts" }
+    {
+      "id": "hoodies",
+      "title": "Худи и свитшоты",
+      "en": "Hoodies & Sweatshirts",
+      "ky": "Худи жана свитшоттор"
+    },
+    {
+      "id": "tees",
+      "title": "Футболки",
+      "en": "T-shirts",
+      "ky": "Футболкалар"
+    },
+    {
+      "id": "jackets",
+      "title": "Куртки и ветровки",
+      "en": "Jackets & Windbreakers",
+      "ky": "Куртка жана ветровкалар"
+    },
+    {
+      "id": "pants",
+      "title": "Брюки и штаны",
+      "en": "Pants & Joggers",
+      "ky": "Шымдар"
+    },
+    {
+      "id": "sport",
+      "title": "Спортивная линия",
+      "en": "Sport line",
+      "ky": "Спорттук линия"
+    },
+    {
+      "id": "headwear",
+      "title": "Кепки, шапки, носки",
+      "en": "Caps, beanies, socks",
+      "ky": "Кепка, топу, байпак"
+    },
+    {
+      "id": "bags",
+      "title": "Рюкзаки и сумки",
+      "en": "Backpacks & bags",
+      "ky": "Рюкзактар жана сумкалар"
+    },
+    {
+      "id": "drinkware",
+      "title": "Термобутылки и кружки",
+      "en": "Bottles & mugs",
+      "ky": "Термобөтөлкө жана кружкалар"
+    },
+    {
+      "id": "tech",
+      "title": "Техника и гейминг",
+      "en": "Tech & gaming",
+      "ky": "Техника жана гейминг"
+    },
+    {
+      "id": "sets",
+      "title": "Комплекты и подарки",
+      "en": "Sets & gifts",
+      "ky": "Комплекттер жана белектер"
+    }
   ],
   "sizeChart": [
-    { "size": "XS", "chest": "82–88", "waist": "66–72", "hips": "86–92" },
-    { "size": "S", "chest": "88–94", "waist": "72–78", "hips": "92–98" },
-    { "size": "M", "chest": "94–100", "waist": "78–84", "hips": "98–104" },
-    { "size": "L", "chest": "100–106", "waist": "84–90", "hips": "104–110" },
-    { "size": "XL", "chest": "106–112", "waist": "90–96", "hips": "110–116" },
-    { "size": "XXL", "chest": "112–118", "waist": "96–102", "hips": "116–122" }
+    {
+      "size": "XS",
+      "chest": "82–88",
+      "waist": "66–72",
+      "hips": "86–92"
+    },
+    {
+      "size": "S",
+      "chest": "88–94",
+      "waist": "72–78",
+      "hips": "92–98"
+    },
+    {
+      "size": "M",
+      "chest": "94–100",
+      "waist": "78–84",
+      "hips": "98–104"
+    },
+    {
+      "size": "L",
+      "chest": "100–106",
+      "waist": "84–90",
+      "hips": "104–110"
+    },
+    {
+      "size": "XL",
+      "chest": "106–112",
+      "waist": "90–96",
+      "hips": "110–116"
+    },
+    {
+      "size": "XXL",
+      "chest": "112–118",
+      "waist": "96–102",
+      "hips": "116–122"
+    }
   ],
   "colors": {
-    "black": { "name": "Чёрный", "hex": "#000000" },
-    "white": { "name": "Белый", "hex": "#FFFFFF" },
-    "blue": { "name": "ESA Blue", "hex": "#075BFF" },
-    "gray": { "name": "Серый", "hex": "#777D88" }
+    "black": {
+      "name": "Чёрный",
+      "hex": "#000000",
+      "ky": "Кара",
+      "en": "Black"
+    },
+    "white": {
+      "name": "Белый",
+      "hex": "#FFFFFF",
+      "ky": "Ак",
+      "en": "White"
+    },
+    "blue": {
+      "name": "ESA Blue",
+      "hex": "#075BFF",
+      "ky": "ESA Blue",
+      "en": "ESA Blue"
+    },
+    "gray": {
+      "name": "Серый",
+      "hex": "#777D88",
+      "ky": "Боз",
+      "en": "Gray"
+    }
   },
   "products": [
     {
@@ -36,13 +136,58 @@
       "price": null,
       "inStock": true,
       "featured": true,
-      "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
       "soldOut": [],
       "sizeChart": true,
-      "colors": ["black", "gray", "white", "blue"],
-      "images": ["hoodie.webp", "hoodie2.webp", "hoodies-colors.webp", "models.webp", "backview.webp"],
+      "colors": [
+        "black",
+        "gray",
+        "white",
+        "blue"
+      ],
+      "images": [
+        "hoodie.webp",
+        "hoodie2.webp",
+        "hoodies-colors.webp",
+        "models.webp",
+        "backview.webp"
+      ],
       "desc": "Худи с вышитым логотипом ESA на груди и надписью на рукаве. Крой на выбор — уточните в комментарии: Oversize, Regular или Classic.",
-      "features": ["Плотный футер", "Вышивка премиум-класса", "Фирменная бирка с QR-кодом", "Удобный капюшон и карман-кенгуру"]
+      "features": [
+        "Плотный футер",
+        "Вышивка премиум-класса",
+        "Фирменная бирка с QR-кодом",
+        "Удобный капюшон и карман-кенгуру"
+      ],
+      "ky": {
+        "title": "ESA Black Series худиси",
+        "subtitle": "2026-жылдагы коллекциянын флагманы",
+        "desc": "Төшүндө сайылган ESA логотиби жана жеңинде жазуусу бар худи. Бычымын комментарийде жазыңыз: Oversize, Regular же Classic.",
+        "features": [
+          "Жыш футер",
+          "Премиум-класстагы сайма",
+          "QR-коду бар фирмалык бирка",
+          "Ыңгайлуу капюшон жана кенгуру-чөнтөк"
+        ]
+      },
+      "en": {
+        "title": "ESA Black Series Hoodie",
+        "subtitle": "The flagship of the 2026 collection",
+        "desc": "Hoodie with an embroidered ESA logo on the chest and lettering on the sleeve. Choose the fit in the comment: Oversize, Regular or Classic.",
+        "features": [
+          "Heavyweight fleece",
+          "Premium embroidery",
+          "Branded tag with QR code",
+          "Comfortable hood and kangaroo pocket"
+        ]
+      }
     },
     {
       "id": "tee-classic",
@@ -52,13 +197,51 @@
       "price": null,
       "inStock": true,
       "featured": true,
-      "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
       "soldOut": [],
       "sizeChart": true,
-      "colors": ["black", "white", "blue"],
-      "images": ["tee.webp", "tees-colors.webp"],
+      "colors": [
+        "black",
+        "white",
+        "blue"
+      ],
+      "images": [
+        "tee.webp",
+        "tees-colors.webp"
+      ],
       "desc": "Футболка на каждый день с логотипом ESA. Крой Oversize, Regular или Classic — напишите в комментарии.",
-      "features": ["Хлопок", "Дышащая ткань", "Не теряет цвет после стирки"]
+      "features": [
+        "Хлопок",
+        "Дышащая ткань",
+        "Не теряет цвет после стирки"
+      ],
+      "ky": {
+        "title": "ESA футболкасы",
+        "subtitle": "Логотиби бар базалык футболка",
+        "desc": "Күнүмдүк кийүүгө ESA логотиби бар футболка. Бычымы Oversize, Regular же Classic — комментарийде жазыңыз.",
+        "features": [
+          "Пахта",
+          "Аба өткөрүүчү кездеме",
+          "Жуугандан кийин түсү өчпөйт"
+        ]
+      },
+      "en": {
+        "title": "ESA T-shirt",
+        "subtitle": "Essential tee with logo",
+        "desc": "Everyday T-shirt with the ESA logo. Oversize, Regular or Classic fit — write it in the comment.",
+        "features": [
+          "Cotton",
+          "Breathable fabric",
+          "Keeps its color after washing"
+        ]
+      }
     },
     {
       "id": "softshell",
@@ -67,13 +250,50 @@
       "subtitle": "Защита от ветра, лёгкость",
       "price": null,
       "inStock": true,
-      "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
       "soldOut": [],
       "sizeChart": true,
-      "colors": ["black", "gray"],
-      "images": ["softshell.webp", "jackets-colors.webp"],
+      "colors": [
+        "black",
+        "gray"
+      ],
+      "images": [
+        "softshell.webp",
+        "jackets-colors.webp"
+      ],
       "desc": "Лёгкая куртка на молнии с синими акцентами и светоотражающими элементами.",
-      "features": ["Защита от ветра", "Фирменная фурнитура", "Светоотражающие элементы"]
+      "features": [
+        "Защита от ветра",
+        "Фирменная фурнитура",
+        "Светоотражающие элементы"
+      ],
+      "ky": {
+        "title": "ESA софтшелл курткасы",
+        "subtitle": "Шамалдан коргойт, жеңил",
+        "desc": "Көк акценттери жана жарык чагылдыруучу элементтери бар сыдырмалуу жеңил куртка.",
+        "features": [
+          "Шамалдан коргойт",
+          "Фирмалык фурнитура",
+          "Жарык чагылдыруучу элементтер"
+        ]
+      },
+      "en": {
+        "title": "ESA Softshell Jacket",
+        "subtitle": "Wind protection, lightweight",
+        "desc": "Lightweight zip jacket with blue accents and reflective details.",
+        "features": [
+          "Wind protection",
+          "Branded hardware",
+          "Reflective details"
+        ]
+      }
     },
     {
       "id": "puffer",
@@ -83,13 +303,51 @@
       "price": null,
       "inStock": true,
       "featured": true,
-      "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
       "soldOut": [],
       "sizeChart": true,
-      "colors": ["black", "blue", "white"],
-      "images": ["puffer.webp", "jackets-colors.webp"],
+      "colors": [
+        "black",
+        "blue",
+        "white"
+      ],
+      "images": [
+        "puffer.webp",
+        "jackets-colors.webp"
+      ],
       "desc": "Стёганый пуховик с капюшоном и синей молнией. Для холодной погоды.",
-      "features": ["Защита от ветра и холода", "Капюшон", "Логотип ESA на груди"]
+      "features": [
+        "Защита от ветра и холода",
+        "Капюшон",
+        "Логотип ESA на груди"
+      ],
+      "ky": {
+        "title": "ESA Black Series пуховиги",
+        "subtitle": "Тоодо да, шаарда да жылуу",
+        "desc": "Капюшону жана көк сыдырмасы бар тигилген пуховик. Суук аба ырайы үчүн.",
+        "features": [
+          "Шамалдан жана сууктан коргойт",
+          "Капюшон",
+          "Төшүндө ESA логотиби"
+        ]
+      },
+      "en": {
+        "title": "ESA Black Series Puffer",
+        "subtitle": "Warmth for the mountains and the city",
+        "desc": "Quilted puffer jacket with a hood and blue zipper. Made for cold weather.",
+        "features": [
+          "Protection from wind and cold",
+          "Hood",
+          "ESA logo on the chest"
+        ]
+      }
     },
     {
       "id": "joggers",
@@ -98,13 +356,52 @@
       "subtitle": "Удобная посадка",
       "price": null,
       "inStock": true,
-      "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
       "soldOut": [],
       "sizeChart": true,
-      "colors": ["black", "gray", "blue", "white"],
-      "images": ["joggers.webp", "pants-colors.webp"],
+      "colors": [
+        "black",
+        "gray",
+        "blue",
+        "white"
+      ],
+      "images": [
+        "joggers.webp",
+        "pants-colors.webp"
+      ],
       "desc": "Спортивные штаны с синими лампасами и манжетами.",
-      "features": ["Удобная посадка", "Премиальный материал", "Карманы на молнии"]
+      "features": [
+        "Удобная посадка",
+        "Премиальный материал",
+        "Карманы на молнии"
+      ],
+      "ky": {
+        "title": "ESA джоггерлери",
+        "subtitle": "Ыңгайлуу отургузуу",
+        "desc": "Көк сызыктары жана манжеттери бар спорттук шым.",
+        "features": [
+          "Ыңгайлуу отургузуу",
+          "Премиум материал",
+          "Сыдырмалуу чөнтөктөр"
+        ]
+      },
+      "en": {
+        "title": "ESA Joggers",
+        "subtitle": "Comfortable fit",
+        "desc": "Sport pants with blue side stripes and cuffs.",
+        "features": [
+          "Comfortable fit",
+          "Premium material",
+          "Zip pockets"
+        ]
+      }
     },
     {
       "id": "cargo",
@@ -113,13 +410,50 @@
       "subtitle": "Карго / классика",
       "price": null,
       "inStock": true,
-      "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
       "soldOut": [],
       "sizeChart": true,
-      "colors": ["black", "gray"],
-      "images": ["pants.webp", "pants-colors.webp"],
+      "colors": [
+        "black",
+        "gray"
+      ],
+      "images": [
+        "pants.webp",
+        "pants-colors.webp"
+      ],
       "desc": "Брюки с карманами-карго и логотипом ESA.",
-      "features": ["Боковые карманы", "Плотная ткань", "Удобная посадка"]
+      "features": [
+        "Боковые карманы",
+        "Плотная ткань",
+        "Удобная посадка"
+      ],
+      "ky": {
+        "title": "ESA карго шымы",
+        "subtitle": "Карго / классика",
+        "desc": "Карго-чөнтөктөрү жана ESA логотиби бар шым.",
+        "features": [
+          "Каптал чөнтөктөр",
+          "Жыш кездеме",
+          "Ыңгайлуу отургузуу"
+        ]
+      },
+      "en": {
+        "title": "ESA Cargo Pants",
+        "subtitle": "Cargo / classic",
+        "desc": "Pants with cargo pockets and the ESA logo.",
+        "features": [
+          "Side pockets",
+          "Durable fabric",
+          "Comfortable fit"
+        ]
+      }
     },
     {
       "id": "sport-set",
@@ -128,13 +462,51 @@
       "subtitle": "Футболка + шорты",
       "price": null,
       "inStock": true,
-      "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
       "soldOut": [],
       "sizeChart": true,
-      "colors": ["black", "white", "blue"],
-      "images": ["sport.webp", "sport-colors.webp"],
+      "colors": [
+        "black",
+        "white",
+        "blue"
+      ],
+      "images": [
+        "sport.webp",
+        "sport-colors.webp"
+      ],
       "desc": "Комплект для спорта и активной жизни: лёгкая футболка и шорты.",
-      "features": ["Лёгкая эластичная ткань", "Быстро сохнет", "Свобода движений"]
+      "features": [
+        "Лёгкая эластичная ткань",
+        "Быстро сохнет",
+        "Свобода движений"
+      ],
+      "ky": {
+        "title": "ESA Sport спорттук комплекти",
+        "subtitle": "Футболка + шорты",
+        "desc": "Спорт жана активдүү жашоо үчүн комплект: жеңил футболка жана шорты.",
+        "features": [
+          "Жеңил ийкемдүү кездеме",
+          "Тез кургайт",
+          "Кыймылга эркин"
+        ]
+      },
+      "en": {
+        "title": "ESA Sport Set",
+        "subtitle": "T-shirt + shorts",
+        "desc": "A set for sport and active life: a light T-shirt and shorts.",
+        "features": [
+          "Light stretch fabric",
+          "Quick-drying",
+          "Freedom of movement"
+        ]
+      }
     },
     {
       "id": "cap",
@@ -143,12 +515,40 @@
       "subtitle": "С синей окантовкой",
       "price": null,
       "inStock": true,
-      "sizes": ["One size"],
+      "sizes": [
+        "One size"
+      ],
       "soldOut": [],
-      "colors": ["black"],
-      "images": ["cap.webp", "cap2.webp"],
+      "colors": [
+        "black"
+      ],
+      "images": [
+        "cap.webp",
+        "cap2.webp"
+      ],
       "desc": "Бейсболка с вышитым логотипом ESA и регулируемым размером.",
-      "features": ["Вышивка", "Регулируемая застёжка"]
+      "features": [
+        "Вышивка",
+        "Регулируемая застёжка"
+      ],
+      "ky": {
+        "title": "ESA кепкасы",
+        "subtitle": "Көк кырбуусу менен",
+        "desc": "Сайылган ESA логотиби бар, өлчөмү жөнгө салынуучу бейсболка.",
+        "features": [
+          "Сайма",
+          "Жөнгө салынуучу илгич"
+        ]
+      },
+      "en": {
+        "title": "ESA Cap",
+        "subtitle": "With blue piping",
+        "desc": "Baseball cap with an embroidered ESA logo and adjustable strap.",
+        "features": [
+          "Embroidery",
+          "Adjustable strap"
+        ]
+      }
     },
     {
       "id": "beanie",
@@ -157,12 +557,39 @@
       "subtitle": "Тёплая вязаная шапка",
       "price": null,
       "inStock": true,
-      "sizes": ["One size"],
+      "sizes": [
+        "One size"
+      ],
       "soldOut": [],
-      "colors": ["black"],
-      "images": ["beanie.webp"],
+      "colors": [
+        "black"
+      ],
+      "images": [
+        "beanie.webp"
+      ],
       "desc": "Вязаная шапка с нашивкой ESA.",
-      "features": ["Брендовая нашивка", "Тёплая вязка"]
+      "features": [
+        "Брендовая нашивка",
+        "Тёплая вязка"
+      ],
+      "ky": {
+        "title": "ESA топусу",
+        "subtitle": "Жылуу токулган топу",
+        "desc": "ESA жамаачысы бар токулган топу.",
+        "features": [
+          "Брендик жамаачы",
+          "Жылуу токума"
+        ]
+      },
+      "en": {
+        "title": "ESA Beanie",
+        "subtitle": "Warm knit beanie",
+        "desc": "Knit beanie with an ESA patch.",
+        "features": [
+          "Brand patch",
+          "Warm knit"
+        ]
+      }
     },
     {
       "id": "socks",
@@ -171,12 +598,41 @@
       "subtitle": "Высокие спортивные",
       "price": null,
       "inStock": true,
-      "sizes": ["36–39", "40–43", "44–46"],
+      "sizes": [
+        "36–39",
+        "40–43",
+        "44–46"
+      ],
       "soldOut": [],
-      "colors": ["black"],
-      "images": ["socks.webp"],
+      "colors": [
+        "black"
+      ],
+      "images": [
+        "socks.webp"
+      ],
       "desc": "Высокие носки с логотипом ESA.",
-      "features": ["Хлопок", "Усиленная пятка и носок"]
+      "features": [
+        "Хлопок",
+        "Усиленная пятка и носок"
+      ],
+      "ky": {
+        "title": "ESA байпактары",
+        "subtitle": "Бийик спорттук",
+        "desc": "ESA логотиби бар бийик байпактар.",
+        "features": [
+          "Пахта",
+          "Бекемделген согончок жана учу"
+        ]
+      },
+      "en": {
+        "title": "ESA Socks",
+        "subtitle": "High sport socks",
+        "desc": "High socks with the ESA logo.",
+        "features": [
+          "Cotton",
+          "Reinforced heel and toe"
+        ]
+      }
     },
     {
       "id": "backpack",
@@ -188,10 +644,39 @@
       "featured": true,
       "sizes": [],
       "soldOut": [],
-      "colors": ["black"],
-      "images": ["backpack.webp", "backpack2.webp"],
+      "colors": [
+        "black"
+      ],
+      "images": [
+        "backpack.webp",
+        "backpack2.webp"
+      ],
       "desc": "Вместительный рюкзак с отделениями и стропами, синие акценты на молниях.",
-      "features": ["Много отделений", "Прочная ткань", "Нашивка ESA"]
+      "features": [
+        "Много отделений",
+        "Прочная ткань",
+        "Нашивка ESA"
+      ],
+      "ky": {
+        "title": "ESA Tactical рюкзагы",
+        "subtitle": "Окууга, ишке жана сапарга",
+        "desc": "Бөлүмдөрү жана боолору бар, сыдырмаларында көк акценттер бар кең рюкзак.",
+        "features": [
+          "Көп бөлүм",
+          "Бекем кездеме",
+          "ESA жамаачысы"
+        ]
+      },
+      "en": {
+        "title": "ESA Tactical Backpack",
+        "subtitle": "For study, work and travel",
+        "desc": "Roomy backpack with compartments and straps, blue accents on the zippers.",
+        "features": [
+          "Many compartments",
+          "Durable fabric",
+          "ESA patch"
+        ]
+      }
     },
     {
       "id": "duffel",
@@ -202,10 +687,35 @@
       "inStock": true,
       "sizes": [],
       "soldOut": [],
-      "colors": ["black"],
-      "images": ["duffel.webp"],
+      "colors": [
+        "black"
+      ],
+      "images": [
+        "duffel.webp"
+      ],
       "desc": "Спортивная сумка с ручками и плечевым ремнём.",
-      "features": ["Плечевой ремень", "Боковой карман"]
+      "features": [
+        "Плечевой ремень",
+        "Боковой карман"
+      ],
+      "ky": {
+        "title": "ESA спорттук сумкасы",
+        "subtitle": "Спорт залга жана сапарга",
+        "desc": "Туткасы жана ийин кайышы бар спорттук сумка.",
+        "features": [
+          "Ийин кайышы",
+          "Каптал чөнтөк"
+        ]
+      },
+      "en": {
+        "title": "ESA Duffel Bag",
+        "subtitle": "For the gym and travel",
+        "desc": "Sports bag with handles and a shoulder strap.",
+        "features": [
+          "Shoulder strap",
+          "Side pocket"
+        ]
+      }
     },
     {
       "id": "bottle",
@@ -216,10 +726,36 @@
       "inStock": true,
       "sizes": [],
       "soldOut": [],
-      "colors": ["black"],
-      "images": ["bottle.webp", "bottle2.webp"],
+      "colors": [
+        "black"
+      ],
+      "images": [
+        "bottle.webp",
+        "bottle2.webp"
+      ],
       "desc": "Металлическая термобутылка с логотипом ESA.",
-      "features": ["Нержавеющая сталь", "Плотная крышка"]
+      "features": [
+        "Нержавеющая сталь",
+        "Плотная крышка"
+      ],
+      "ky": {
+        "title": "ESA термобөтөлкөсү",
+        "subtitle": "Температураны кармайт",
+        "desc": "ESA логотиби бар металл термобөтөлкө.",
+        "features": [
+          "Дат баспас болот",
+          "Бекем капкак"
+        ]
+      },
+      "en": {
+        "title": "ESA Thermo Bottle",
+        "subtitle": "Keeps the temperature",
+        "desc": "Metal thermo bottle with the ESA logo.",
+        "features": [
+          "Stainless steel",
+          "Tight lid"
+        ]
+      }
     },
     {
       "id": "tumbler",
@@ -230,10 +766,35 @@
       "inStock": true,
       "sizes": [],
       "soldOut": [],
-      "colors": ["black"],
-      "images": ["tumbler.webp"],
+      "colors": [
+        "black"
+      ],
+      "images": [
+        "tumbler.webp"
+      ],
       "desc": "Компактная термокружка с логотипом ESA.",
-      "features": ["Нержавеющая сталь", "Удобно держать в руке"]
+      "features": [
+        "Нержавеющая сталь",
+        "Удобно держать в руке"
+      ],
+      "ky": {
+        "title": "ESA термокружкасы",
+        "subtitle": "Жолго кофе үчүн",
+        "desc": "ESA логотиби бар ыкчам термокружка.",
+        "features": [
+          "Дат баспас болот",
+          "Колго ыңгайлуу"
+        ]
+      },
+      "en": {
+        "title": "ESA Tumbler",
+        "subtitle": "Coffee to go",
+        "desc": "Compact travel tumbler with the ESA logo.",
+        "features": [
+          "Stainless steel",
+          "Easy to hold"
+        ]
+      }
     },
     {
       "id": "mug",
@@ -244,10 +805,32 @@
       "inStock": true,
       "sizes": [],
       "soldOut": [],
-      "colors": ["black"],
-      "images": ["mug.webp"],
+      "colors": [
+        "black"
+      ],
+      "images": [
+        "mug.webp"
+      ],
       "desc": "Керамическая кружка с белым логотипом ESA.",
-      "features": ["Керамика"]
+      "features": [
+        "Керамика"
+      ],
+      "ky": {
+        "title": "ESA кружкасы",
+        "subtitle": "Кара жылтырак",
+        "desc": "Ак ESA логотиби бар керамикалык кружка.",
+        "features": [
+          "Керамика"
+        ]
+      },
+      "en": {
+        "title": "ESA Mug",
+        "subtitle": "Glossy black",
+        "desc": "Ceramic mug with a white ESA logo.",
+        "features": [
+          "Ceramic"
+        ]
+      }
     },
     {
       "id": "notebook",
@@ -258,10 +841,35 @@
       "inStock": true,
       "sizes": [],
       "soldOut": [],
-      "colors": ["black"],
-      "images": ["notebook.webp"],
+      "colors": [
+        "black"
+      ],
+      "images": [
+        "notebook.webp"
+      ],
       "desc": "Блокнот в твёрдой обложке с резинкой. DREAM · CREATE · ACHIEVE.",
-      "features": ["Твёрдая обложка", "Резинка-застёжка"]
+      "features": [
+        "Твёрдая обложка",
+        "Резинка-застёжка"
+      ],
+      "ky": {
+        "title": "ESA блокноту",
+        "subtitle": "Идеялар жана пландар үчүн",
+        "desc": "Катуу мукабалуу, резинкалуу блокнот. DREAM · CREATE · ACHIEVE.",
+        "features": [
+          "Катуу мукаба",
+          "Резинка-илгич"
+        ]
+      },
+      "en": {
+        "title": "ESA Notebook",
+        "subtitle": "For ideas and plans",
+        "desc": "Hardcover notebook with an elastic band. DREAM · CREATE · ACHIEVE.",
+        "features": [
+          "Hard cover",
+          "Elastic closure"
+        ]
+      }
     },
     {
       "id": "laptop-skin",
@@ -270,12 +878,40 @@
       "subtitle": "Наклейка на крышку",
       "price": null,
       "inStock": true,
-      "sizes": ["13\"", "14\"", "15.6\"", "16\"", "17\""],
+      "sizes": [
+        "13\"",
+        "14\"",
+        "15.6\"",
+        "16\"",
+        "17\""
+      ],
       "soldOut": [],
-      "colors": ["black"],
-      "images": ["laptop.webp"],
+      "colors": [
+        "black"
+      ],
+      "images": [
+        "laptop.webp"
+      ],
       "desc": "Виниловый скин на крышку ноутбука с логотипом ESA. Напишите модель ноутбука в комментарии.",
-      "features": ["Под вашу модель ноутбука"]
+      "features": [
+        "Под вашу модель ноутбука"
+      ],
+      "ky": {
+        "title": "ESA ноутбук скини",
+        "subtitle": "Капкакка чаптама",
+        "desc": "ESA логотиби бар ноутбук капкагы үчүн винил скин. Ноутбуктун моделин комментарийде жазыңыз.",
+        "features": [
+          "Сиздин ноутбук моделине ылайык"
+        ]
+      },
+      "en": {
+        "title": "ESA Laptop Skin",
+        "subtitle": "Lid sticker",
+        "desc": "Vinyl skin for your laptop lid with the ESA logo. Write your laptop model in the comment.",
+        "features": [
+          "Made for your laptop model"
+        ]
+      }
     },
     {
       "id": "mousepad",
@@ -286,10 +922,35 @@
       "inStock": true,
       "sizes": [],
       "soldOut": [],
-      "colors": ["black"],
-      "images": ["mousepad.webp"],
+      "colors": [
+        "black"
+      ],
+      "images": [
+        "mousepad.webp"
+      ],
       "desc": "Большой коврик для мыши и клавиатуры с логотипом ESA.",
-      "features": ["Прорезиненное основание", "Обработанные края"]
+      "features": [
+        "Прорезиненное основание",
+        "Обработанные края"
+      ],
+      "ky": {
+        "title": "ESA оюн килемчеси",
+        "subtitle": "Чычкан үчүн чоң килемче",
+        "desc": "ESA логотиби бар чычкан жана клавиатура үчүн чоң килемче.",
+        "features": [
+          "Резина негиз",
+          "Иштетилген четтер"
+        ]
+      },
+      "en": {
+        "title": "ESA Gaming Mouse Pad",
+        "subtitle": "Large desk mat",
+        "desc": "Large mouse and keyboard mat with the ESA logo.",
+        "features": [
+          "Rubber base",
+          "Stitched edges"
+        ]
+      }
     },
     {
       "id": "headphones",
@@ -300,10 +961,32 @@
       "inStock": false,
       "sizes": [],
       "soldOut": [],
-      "colors": ["black"],
-      "images": ["headphones.webp"],
+      "colors": [
+        "black"
+      ],
+      "images": [
+        "headphones.webp"
+      ],
       "desc": "Полноразмерные наушники с логотипом ESA. Модель и характеристики уточняйте у менеджера.",
-      "features": ["Мягкие амбушюры"]
+      "features": [
+        "Мягкие амбушюры"
+      ],
+      "ky": {
+        "title": "ESA наушниктери",
+        "subtitle": "Толук өлчөмдүү",
+        "desc": "ESA логотиби бар толук өлчөмдүү наушниктер. Модели жана мүнөздөмөлөрүн менеджерден тактаңыз.",
+        "features": [
+          "Жумшак амбушюрлар"
+        ]
+      },
+      "en": {
+        "title": "ESA Headphones",
+        "subtitle": "Over-ear",
+        "desc": "Over-ear headphones with the ESA logo. Ask the manager about the model and specs.",
+        "features": [
+          "Soft ear cushions"
+        ]
+      }
     },
     {
       "id": "gaming-chair",
@@ -314,10 +997,35 @@
       "inStock": false,
       "sizes": [],
       "soldOut": [],
-      "colors": ["black"],
-      "images": ["chair.webp"],
+      "colors": [
+        "black"
+      ],
+      "images": [
+        "chair.webp"
+      ],
       "desc": "Игровое кресло с логотипом ESA на спинке. Модель и характеристики уточняйте у менеджера.",
-      "features": ["Подлокотники", "Подушка под поясницу"]
+      "features": [
+        "Подлокотники",
+        "Подушка под поясницу"
+      ],
+      "ky": {
+        "title": "ESA оюн креслосу",
+        "subtitle": "Иш жана оюн үчүн",
+        "desc": "Аркасында ESA логотиби бар оюн креслосу. Модели жана мүнөздөмөлөрүн менеджерден тактаңыз.",
+        "features": [
+          "Колтуктар",
+          "Бел үчүн жаздык"
+        ]
+      },
+      "en": {
+        "title": "ESA Gaming Chair",
+        "subtitle": "For work and play",
+        "desc": "Gaming chair with the ESA logo on the back. Ask the manager about the model and specs.",
+        "features": [
+          "Armrests",
+          "Lumbar pillow"
+        ]
+      }
     },
     {
       "id": "complete-set",
@@ -327,14 +1035,84 @@
       "price": null,
       "inStock": true,
       "featured": true,
-      "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
       "soldOut": [],
       "sizeChart": true,
-      "colors": ["black"],
-      "images": ["set.webp", "models.webp", "box.webp", "giftbox.webp"],
+      "colors": [
+        "black"
+      ],
+      "images": [
+        "set.webp",
+        "models.webp",
+        "box.webp",
+        "giftbox.webp"
+      ],
       "desc": "Всё сразу в фирменной коробке: худи, футболка, брюки, куртка, кепка, носки, кроссовки, рюкзак и термобутылка. Размер обуви напишите в комментарии.",
-      "includes": ["Худи", "Футболка", "Брюки", "Куртка", "Кепка", "Носки", "Кроссовки", "Рюкзак", "Термобутылка"],
-      "features": ["Фирменная подарочная коробка", "Бирка с QR-кодом", "Открытка «Спасибо за выбор!»"]
+      "includes": [
+        "Худи",
+        "Футболка",
+        "Брюки",
+        "Куртка",
+        "Кепка",
+        "Носки",
+        "Кроссовки",
+        "Рюкзак",
+        "Термобутылка"
+      ],
+      "features": [
+        "Фирменная подарочная коробка",
+        "Бирка с QR-кодом",
+        "Открытка «Спасибо за выбор!»"
+      ],
+      "ky": {
+        "title": "ESA Complete Set №01",
+        "subtitle": "Black Series толук комплекти",
+        "desc": "Баары бир фирмалык кутуда: худи, футболка, шым, куртка, кепка, байпак, кроссовка, рюкзак жана термобөтөлкө. Бут кийимдин өлчөмүн комментарийде жазыңыз.",
+        "includes": [
+          "Худи",
+          "Футболка",
+          "Шым",
+          "Куртка",
+          "Кепка",
+          "Байпак",
+          "Кроссовка",
+          "Рюкзак",
+          "Термобөтөлкө"
+        ],
+        "features": [
+          "Фирмалык белек кутусу",
+          "QR-коду бар бирка",
+          "«Тандооңуз үчүн рахмат!» открыткасы"
+        ]
+      },
+      "en": {
+        "title": "ESA Complete Set №01",
+        "subtitle": "The full Black Series set",
+        "desc": "Everything at once in a branded box: hoodie, T-shirt, pants, jacket, cap, socks, sneakers, backpack and thermo bottle. Write your shoe size in the comment.",
+        "includes": [
+          "Hoodie",
+          "T-shirt",
+          "Pants",
+          "Jacket",
+          "Cap",
+          "Socks",
+          "Sneakers",
+          "Backpack",
+          "Thermo bottle"
+        ],
+        "features": [
+          "Branded gift box",
+          "Tag with QR code",
+          "“Thank you for choosing us!” card"
+        ]
+      }
     },
     {
       "id": "gift-box",
@@ -345,10 +1123,41 @@
       "inStock": true,
       "sizes": [],
       "soldOut": [],
-      "colors": ["black"],
-      "images": ["box.webp", "giftbox.webp", "tag.webp", "patch.webp"],
+      "colors": [
+        "black"
+      ],
+      "images": [
+        "box.webp",
+        "giftbox.webp",
+        "tag.webp",
+        "patch.webp"
+      ],
       "desc": "Добавьте к заказу, чтобы получить вещи в подарочной коробке ESA с фирменной бумагой и открыткой.",
-      "features": ["Подарочная коробка", "Фирменный пакет", "Бирка с QR-кодом"]
+      "features": [
+        "Подарочная коробка",
+        "Фирменный пакет",
+        "Бирка с QR-кодом"
+      ],
+      "ky": {
+        "title": "ESA белек таңгагы",
+        "subtitle": "Куту, пакет жана QR бирка",
+        "desc": "Буйрутмаңызды фирмалык кагаз жана открыткасы бар ESA белек кутусунда алуу үчүн кошуңуз.",
+        "features": [
+          "Белек кутусу",
+          "Фирмалык пакет",
+          "QR-коду бар бирка"
+        ]
+      },
+      "en": {
+        "title": "ESA Gift Packaging",
+        "subtitle": "Box, bag and QR tag",
+        "desc": "Add it to your order to receive your items in an ESA gift box with branded paper and a card.",
+        "features": [
+          "Gift box",
+          "Branded bag",
+          "Tag with QR code"
+        ]
+      }
     }
   ]
 }

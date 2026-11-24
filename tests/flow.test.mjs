@@ -148,3 +148,27 @@ test("лимит заказов с одного адреса", async () => {
   for (let i = 0; i < 7; i++) last = await order(post("/api/order", goodOrder), ctx("7.7.7.7"));
   assert.equal(last.status, 429);
 });
+
+test("языки: бот отвечает на языке Telegram, заказ с сайта на кыргызском — статусы на кыргызском", async () => {
+  sent.length = 0;
+  await tgUpdate({ message: { message_id: ++msgId, chat: { id: 555, type: "private" }, from: { id: 555, first_name: "John", language_code: "en" }, text: "/start" } });
+  assert.ok(sent.some((s) => s.chat_id === 555 && /This is <b>ESA Store<\/b>/.test(s.text)), "приветствие на английском");
+  await tgUpdate(cb(555, "p:hoodie-black-series"));
+  assert.ok(sent.some((s) => s.method === "sendPhoto" && s.caption.includes("ESA Black Series Hoodie") && s.caption.includes("Price on request")));
+  await tgUpdate(cb(555, "lang:ky"));
+  sent.length = 0;
+  await tgUpdate(cb(555, "m:cat"));
+  assert.ok(sent.some((s) => s.chat_id === 555 && s.text.includes("Категорияны тандаңыз")), "после выбора — кыргызский");
+
+  const r = await order(post("/api/order", { ...goodOrder, lang: "ky" }), ctx("8.8.8.8"));
+  const so = await r.json();
+  assert.ok(so.statusUrl.includes("?lang=ky#/order/"));
+  await tgUpdate(msg(666, `/start ${so.id}_${so.key}`));
+  assert.ok(sent.some((s) => s.chat_id === 666 && s.text.includes("ушул чатка туташтырылды")), "привязка на языке заказа");
+  sent.length = 0;
+  await tgUpdate(cb(111, `acc:${so.id}`));
+  const toClient = sent.find((s) => s.chat_id === 666);
+  assert.ok(toClient.text.includes("ырасталды") && toClient.text.includes("+996 222 063 616"));
+  const card = sent.find((s) => s.method === "editMessageText");
+  assert.ok(card.text.includes("Худи ESA Black Series"), "владельцу — по-русски");
+});
